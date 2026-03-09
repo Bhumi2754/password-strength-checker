@@ -1,0 +1,123 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Password Strength Checker</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<h1>🔐 Password Strength Checker</h1>
+<p>Create strong passwords to stay secure</p>
+
+<div class="inputBox">
+
+<input type="password" id="password" placeholder="Enter your password">
+
+<i class="fa-solid fa-eye toggle" onclick="togglePassword()"></i>
+
+</div>
+
+<div class="strength-bar">
+<div id="strength"></div>
+</div>
+
+<p id="strength-text"></p>
+
+<ul id="feedback"></ul>
+
+<button onclick="generatePassword()">Generate Strong Password</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Password Security Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<h1>🔐 Password Security Analyzer</h1>
+<p>Check password strength and security</p>
+
+<div class="inputBox">
+
+<input type="password" id="password" placeholder="Enter password">
+
+<i class="fa-solid fa-eye toggle" onclick="togglePassword()"></i>
+
+<i class="fa-solid fa-copy copy" onclick="copyPassword()"></i>
+
+</div>
+
+<div class="strength-bar">
+<div id="strength"></div>
+</div>
+
+<p id="strength-text"></p>
+
+<p id="crack-time"></p>
+
+<ul id="feedback"></ul>
+
+<button onclick="generatePassword()">Generate Strong Password</button>
+
+<button onclick="copyPassword()">Copy Password</button>
+
+<div class="tips">
+
+<h3>🛡️ Security Tips</h3>
+
+<ul>
+<li>Use at least 12 characters</li>
+<li>Include uppercase and lowercase letters</li>
+<li>Add numbers and special symbols</li>
+<li>Avoid using personal information</li>
+<li>Use different passwords for each website</li>
+</ul>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
